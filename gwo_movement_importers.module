@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the GWO-Movement Importers feature.
+ */
+
+include_once 'gwo_movement_importers.features.inc';

@@ -49,6 +49,51 @@ function gwo_movement_importers_feeds_importer_default() {
             'target' => 'guid',
             'unique' => 1,
           ),
+          2 => array(
+            'source' => 'POSTAL CODE',
+            'target' => 'field_address:postal_code',
+            'unique' => FALSE,
+          ),
+          3 => array(
+            'source' => 'THOROUGHFARE',
+            'target' => 'field_address:thoroughfare',
+            'unique' => FALSE,
+          ),
+          4 => array(
+            'source' => 'STREET NUMBER',
+            'target' => 'field_address:premise',
+            'unique' => FALSE,
+          ),
+          5 => array(
+            'source' => 'LOCALITY',
+            'target' => 'field_address:locality',
+            'unique' => FALSE,
+          ),
+          6 => array(
+            'source' => 'COUNTRY',
+            'target' => 'field_address:country',
+            'unique' => FALSE,
+          ),
+          7 => array(
+            'source' => 'Description',
+            'target' => 'body:et:und',
+            'unique' => FALSE,
+          ),
+          8 => array(
+            'source' => 'Balance Link',
+            'target' => 'field_gwo_balance',
+            'unique' => FALSE,
+          ),
+          9 => array(
+            'source' => 'Number Employees',
+            'target' => 'field_number_of_employees_',
+            'unique' => FALSE,
+          ),
+          10 => array(
+            'source' => 'Contact',
+            'target' => 'field_contactbusiness',
+            'unique' => FALSE,
+          ),
         ),
         'update_existing' => '2',
         'input_format' => 'full_html',
@@ -221,6 +266,21 @@ function gwo_movement_importers_feeds_importer_default() {
           3 => array(
             'source' => 'IMAGEURL',
             'target' => 'field_image',
+            'unique' => FALSE,
+          ),
+          4 => array(
+            'source' => 'Description',
+            'target' => 'body:et:und',
+            'unique' => FALSE,
+          ),
+          5 => array(
+            'source' => 'Activity position',
+            'target' => 'field_position',
+            'unique' => FALSE,
+          ),
+          6 => array(
+            'source' => 'Contact',
+            'target' => 'field_contactbusiness',
             'unique' => FALSE,
           ),
         ),
